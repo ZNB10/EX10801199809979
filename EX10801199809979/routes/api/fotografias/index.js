@@ -101,7 +101,7 @@ router.delete(
         fotCollection,
         function (err, savedSuccesfully) {
           if (err) {
-            res.status(400).json({ "error": "No se pudo eliminar objeto" });
+            res.status(400).json({ "error": "Lo sentimos, Ha ocurrido un error, No se pudo eliminar" });
           } else {
             res.json({"newProdsQty":fotCollection.length});
           }
