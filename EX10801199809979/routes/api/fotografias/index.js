@@ -32,7 +32,7 @@ router.get('/', function(req, res){
        }
     );
     var foExists = fotCollection.find(
-      function(o, i){
+      function(o,i){
         return o.id === newFo.id;
       }
     )
@@ -76,7 +76,7 @@ router.get('/', function(req, res){
       fotCollection,
       function (err, savedSuccesfully) {
         if (err) {
-          res.status(400).json({ "error": "Lo sentimos ha ocurrido un error, No se pudo actualizar" });
+          res.status(400).json({ "error": "Lo sentimos, Ha ocurrido un error, No se pudo actualizar" });
         } else {
           res.json(modFotografias);  
         }
